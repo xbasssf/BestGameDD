@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BestGameDD"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="1200" ResizeMode="NoResize">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/background.jpg"/>
+        </Grid.Background>
+        <Label Name="StrengthLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 200 500"></Label>
+        <TextBlock x:Name="StrengthTB" Height="50" Width="100" Margin="0 0 430 500" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Center"> Сила </TextBlock>
     </Grid>
 </Window>
