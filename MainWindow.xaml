@@ -10,7 +10,20 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Images/background.jpg"/>
         </Grid.Background>
-        <Label Name="StrengthLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 200 500"></Label>
-        <TextBlock x:Name="StrengthTB" Height="50" Width="100" Margin="0 0 430 500" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Center"> Сила </TextBlock>
+        <Label Name="StrengthNowLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 200 500"></Label>
+        <TextBlock x:Name="StrengthTB" Height="40" Width="100" Margin="0 0 425 500" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Right"> Сила </TextBlock>
+        <Label Name="StrengthBaseLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 -30 500"></Label>
+        <Label Name="DexterityLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 200 370"></Label>
+        <TextBlock x:Name="DexterityTB" Height="40" Width="127" Margin="0 0 450 370" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Right"> Ловкость </TextBlock>
+        <Label Name="DexterityBaseLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 -30 370"></Label>
+        <Label Name="IntelligenceLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 200 240"></Label>
+        <TextBlock x:Name="IntelligenceTB" Height="40" Width="160" Margin="0 0 480 240" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Right"> Интеллект </TextBlock>
+        <Label Name="IntelligenceBaseLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 -30 240"></Label>
+        <Label Name="VitalityLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 200 110"></Label>
+        <TextBlock x:Name="VitalityTB" Height="40" Width="110" Margin="0 0 425 110" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Right"> Жизнь </TextBlock>
+        <Label Name="VitalityBaseLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 -30 110"></Label>
+        <TextBlock Name="BaseTB"  Height="30" Width="100" Margin="0 0 -30 590" FontSize="30" FontWeight="Bold" Foreground="Aqua" FontFamily="XO Thames" TextAlignment="Center"> Base </TextBlock>
+        <TextBlock Name="NowTB"  Height="30" Width="100" Margin="0 0 200 590" FontSize="30" FontWeight="Bold" Foreground="Aqua" FontFamily="XO Thames" TextAlignment="Center"> Now </TextBlock>
+        <ComboBox Name="UserComboBox" Height="50" Width="300" Margin="0 0 870 700" SelectionChanged="UserComboBox_SelectionChanged"></ComboBox>
     </Grid>
 </Window>

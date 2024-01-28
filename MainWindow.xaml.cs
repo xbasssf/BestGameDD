@@ -23,7 +23,14 @@ namespace BestGameDD
         public MainWindow()
         {
             InitializeComponent();
+            UserComboBox.ItemsSource = new User[]
+            {
+            new User { Name = "Warrior"},
+            new User { Name = "Rogue"},
+            new User { Name = "Wizard"}
+            };
         }
 
+    
     }
 }
