@@ -23,14 +23,15 @@ namespace BestGameDD
         public MainWindow()
         {
             InitializeComponent();
-            UserComboBox.ItemsSource = new User[]
+            UserComboBox.ItemsSource = new List <string>()
             {
-            new User { Name = "Warrior"},
-            new User { Name = "Rogue"},
-            new User { Name = "Wizard"}
+             "Warrior", "Rogue", "Wizard"
             };
         }
 
-    
+        private void UserComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        { 
+            
+        }
     }
 }
