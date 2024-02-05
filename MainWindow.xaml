@@ -10,18 +10,18 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Images/background.jpg"/>
         </Grid.Background>
-        <Label Name="StrengthNowLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 200 500"></Label>
+        <Label Name="StrengthNowLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="25" FontWeight="DemiBold" FontFamily="XO Thames" Height="50" Width="100" Margin="0 0 200 500"></Label>
         <TextBlock x:Name="StrengthTB" Height="40" Width="130" Margin="0 0 460 500" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Right"> Strength </TextBlock>
-        <Label Name="StrengthBaseLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 -30 500"></Label>
-        <Label Name="DexterityNowLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 200 370"></Label>
+        <Label Name="StrengthBaseLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="25" FontWeight="DemiBold" FontFamily="XO Thames" Height="50" Width="100" Margin="0 0 -30 500"></Label>
+        <Label Name="DexterityNowLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="25" FontWeight="DemiBold" FontFamily="XO Thames" Height="50" Width="100" Margin="0 0 200 370"></Label>
         <TextBlock x:Name="DexterityTB" Height="40" Width="127" Margin="0 0 450 370" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Right"> Dexterity </TextBlock>
-        <Label Name="DexterityBaseLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 -30 370"></Label>
-        <Label Name="IntelligenceNowLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 200 240"></Label>
+        <Label Name="DexterityBaseLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="25" FontWeight="DemiBold" FontFamily="XO Thames" Height="50" Width="100" Margin="0 0 -30 370"></Label>
+        <Label Name="IntelligenceNowLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="25" FontWeight="DemiBold" FontFamily="XO Thames" Height="50" Width="100" Margin="0 0 200 240"></Label>
         <TextBlock x:Name="IntelligenceTB" Height="40" Width="160" Margin="0 0 480 240" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Right"> Intelligence </TextBlock>
-        <Label Name="IntelligenceBaseLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 -30 240"></Label>
-        <Label Name="VitalityNowLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 200 110"></Label>
+        <Label Name="IntelligenceBaseLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="25" FontWeight="DemiBold" FontFamily="XO Thames" Height="50" Width="100" Margin="0 0 -30 240"></Label>
+        <Label Name="VitalityNowLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="25" FontWeight="DemiBold" FontFamily="XO Thames" Height="50" Width="100" Margin="0 0 200 110"></Label>
         <TextBlock x:Name="VitalityTB" Height="40" Width="140" Margin="0 0 460 110" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Right"> Vitality </TextBlock>
-        <Label Name="VitalityBaseLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 -30 110"></Label>
+        <Label Name="VitalityBaseLabel" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="25" FontWeight="DemiBold" FontFamily="XO Thames" Height="50" Width="100" Margin="0 0 -30 110"></Label>
         <TextBlock Name="BaseTB"  Height="30" Width="100" Margin="0 0 -30 590" FontSize="30" FontWeight="Bold" Foreground="Aqua" FontFamily="XO Thames" TextAlignment="Center"> Base </TextBlock>
         <TextBlock Name="NowTB"  Height="30" Width="100" Margin="0 0 200 590" FontSize="30" FontWeight="Bold" Foreground="Aqua" FontFamily="XO Thames" TextAlignment="Center"> Now </TextBlock>
         <ComboBox Name="UserComboBox" Height="50" Width="300" Margin="0 0 870 700" FontSize="30" FontWeight="Bold" FontFamily="XO Thames" SelectionChanged="UserComboBox_SelectionChanged">
@@ -29,11 +29,15 @@
             <ComboBoxItem FontSize="25" FontWeight="DemiBold" FontFamily="XO Thames">Rogue</ComboBoxItem>
             <ComboBoxItem FontSize="25" FontWeight="DemiBold" FontFamily="XO Thames">Wizard</ComboBoxItem>
         </ComboBox>
-        <Label Name="Health" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 -400 500"></Label>
-        <TextBlock x:Name="HealthTB" Height="30" Width="140" Margin="0 0 -400 590" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Center"> Health </TextBlock>
-        <Label Name="Mana" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 -650 500"></Label>
-        <TextBlock x:Name="ManaTB" Height="30" Width="100" Margin="0 0 -650 590" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Center"> Mana </TextBlock>
-        
-
+        <Label Name="Health" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 -770 500"></Label>
+        <TextBlock x:Name="HealthTB" Height="30" Width="140" Margin="0 0 -770 590" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Center"> Health </TextBlock>
+        <Label Name="Mana" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 -1000 500"></Label>
+        <TextBlock x:Name="ManaTB" Height="30" Width="100" Margin="0 0 -1000 590" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Center"> Mana </TextBlock>
+        <TextBlock x:Name="ВalanceТВ" Height="40" Width="130" Margin="0 0 1070 190" FontSize="30" FontWeight="Bold" Foreground="Aqua" FontFamily="XO Thames" TextAlignment="Center"> Вalance</TextBlock>
+        <TextBox x:Name="ВalanceTextBox" Height="50" Width="100" Margin="0 0 1070 110" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="30" FontWeight="Bold" FontFamily="XO Thames" TextAlignment="Center" TextChanged="ВalanceTextBox_TextChanged"></TextBox>
+        <Button  Name="StrengthBtn" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="30" FontWeight="DemiBold" FontFamily="XO Thames" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="50" Width="50" Margin="0 0 -200 500" Click="StrengthBtn_Click"> + </Button>
+        <Button  Name="DexterityBtn" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="30" FontWeight="DemiBold" FontFamily="XO Thames" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="50" Width="50" Margin="0 0 -200 370">+</Button>
+        <Button  Name="IntelligenceBtn" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="30" FontWeight="DemiBold" FontFamily="XO Thames" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="50" Width="50" Margin="0 0 -200 240">+</Button>
+        <Button  Name="VitalityBtn" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="30" FontWeight="DemiBold" FontFamily="XO Thames" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="50" Width="50" Margin="0 0 -200 110">+</Button>
     </Grid>
 </Window>
