@@ -20,9 +20,9 @@ namespace BestGameDD
     /// </summary>
     public partial class MainWindow : Window
     {
-        Wizard wizard = new Wizard();
-        Warrior warrior = new Warrior();
-        Rogue rogue = new Rogue();
+        //Wizard wizard = new Wizard();
+        //Warrior warrior = new Warrior();
+        //Rogue rogue = new Rogue();
         public MainWindow()
         {
             InitializeComponent();
@@ -37,7 +37,7 @@ namespace BestGameDD
             switch (selectedClass)
             {
                 case "Wizard":
-                    
+                    Wizard wizard = new Wizard();
                     StrengthBaseLabel.Content = wizard.Strength;
                     DexterityBaseLabel.Content = wizard.Dexterity;
                     IntelligenceBaseLabel.Content = wizard.Intelligence;
@@ -79,7 +79,16 @@ namespace BestGameDD
 
         private void StrengthBtn_Click(object sender, RoutedEventArgs e)
         {
-           
+            if (ComboBoxItem.Equals == "") {
+            }
+
+            
+
+        }
+
+        private void ВalanceTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
