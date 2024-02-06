@@ -29,12 +29,12 @@
             <ComboBoxItem FontSize="25" FontWeight="DemiBold" FontFamily="XO Thames">Rogue</ComboBoxItem>
             <ComboBoxItem FontSize="25" FontWeight="DemiBold" FontFamily="XO Thames">Wizard</ComboBoxItem>
         </ComboBox>
-        <Label Name="Health" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 -770 500"></Label>
+        <Label Name="Health" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="25" FontWeight="DemiBold" FontFamily="XO Thames" Height="50" Width="100" Margin="0 0 -770 500"></Label>
         <TextBlock x:Name="HealthTB" Height="30" Width="140" Margin="0 0 -770 590" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Center"> Health </TextBlock>
-        <Label Name="Mana" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" Height="50" Width="100" Margin="0 0 -1000 500"></Label>
+        <Label Name="Mana" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="25" FontWeight="DemiBold" FontFamily="XO Thames" Height="50" Width="100" Margin="0 0 -1000 500"></Label>
         <TextBlock x:Name="ManaTB" Height="30" Width="100" Margin="0 0 -1000 590" FontSize="30" FontWeight="Bold" Foreground="MediumSlateBlue" FontFamily="XO Thames" TextAlignment="Center"> Mana </TextBlock>
         <TextBlock x:Name="ВalanceТВ" Height="40" Width="130" Margin="0 0 1070 190" FontSize="30" FontWeight="Bold" Foreground="Aqua" FontFamily="XO Thames" TextAlignment="Center"> Вalance</TextBlock>
-        <TextBox x:Name="ВalanceTextBox" Height="50" Width="100" Margin="0 0 1070 110" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="30" FontWeight="Bold" FontFamily="XO Thames" TextAlignment="Center" TextChanged="ВalanceTextBox_TextChanged"></TextBox>
+        <TextBox x:Name="ВalanceTextBox" Height="50" Width="100" Margin="0 0 1070 110" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="30" FontWeight="Bold" FontFamily="XO Thames" TextAlignment="Center" ></TextBox>
         <Button  Name="StrengthBtn" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="30" FontWeight="DemiBold" FontFamily="XO Thames" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="50" Width="50" Margin="0 0 -200 500" Click="StrengthBtn_Click"> + </Button>
         <Button  Name="DexterityBtn" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="30" FontWeight="DemiBold" FontFamily="XO Thames" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="50" Width="50" Margin="0 0 -200 370">+</Button>
         <Button  Name="IntelligenceBtn" Background="White" BorderThickness="5 5 5 5" BorderBrush="BlueViolet" FontSize="30" FontWeight="DemiBold" FontFamily="XO Thames" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="50" Width="50" Margin="0 0 -200 240">+</Button>

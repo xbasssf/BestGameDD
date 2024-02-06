@@ -6,35 +6,11 @@ using System.Threading.Tasks;
 
 namespace BestGameDD
 {
-    internal class Wizard
+    internal class Wizard : User
     {
-        public int Strength { get; set; }
-        public int Dexterity { get; set; }
-        public int Intelligence { get; set; }
-        public int Vitality { get; set; }
-
-        public Wizard()
+        public Wizard() : base(15, 45, 20, 80, 35, 250, 15, 70, 24, 98, 52, 375, 7, 20, 35, 35, 4, 20)
         {
-          
-            Strength = 15;
-            Dexterity = 20;
-            Intelligence = 35;
-            Vitality = 15;
         }
 
-        public void IncreaseStrength()
-        {
-            Strength++;
-        }
-
-        public void DecreaseStrength()
-        {
-            if (Strength > 0)
-            {
-                Strength--;
-            }
-        }
-
-       
     }
 }

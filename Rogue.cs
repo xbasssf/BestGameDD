@@ -6,20 +6,10 @@ using System.Threading.Tasks;
 
 namespace BestGameDD
 {
-    internal class Rogue
+    internal class Rogue : User
     {
-        public int Strength { get; set; }
-        public int Dexterity { get; set; }
-        public int Intelligence { get; set; }
-        public int Vitality { get; set; }
-
-        public Rogue()
+        public Rogue() : base(20, 65, 30, 250, 15, 70, 20, 80, 40, 120, 18, 84, 25, 45, 3, 7, 6, 30)
         {
-
-            Strength = 20;
-            Dexterity = 30;
-            Intelligence = 15;
-            Vitality = 20;
         }
     }
 }

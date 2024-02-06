@@ -20,81 +20,117 @@ namespace BestGameDD
     /// </summary>
     public partial class MainWindow : Window
     {
+        double hprogbuffer = 0;
+        double hpwizbuffer = 0;
+        double manarogbuffer = 0;
+        double manawizbuffer = 0.5;
+        int tokens = 0;
+        double WarCrtChanceBuf;
+        double RogCrtChanceBuf;
+        double WizCrtChanceBuf;
 
-        Wizard wizard = new Wizard();
         Warrior warrior = new Warrior();
         Rogue rogue = new Rogue();
+        Wizard wizard = new Wizard();
+
         public MainWindow()
         {
             InitializeComponent();
 
         }
-      
+
         private void UserComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ComboBoxItem selectedItem = (ComboBoxItem)UserComboBox.SelectedItem;
             string selectedClass = selectedItem.Content.ToString();
-           
             switch (selectedClass)
             {
                 case "Wizard":
                     Wizard wizard = new Wizard();
-                    StrengthBaseLabel.Content = wizard.Strength;
-                    DexterityBaseLabel.Content = wizard.Dexterity;
-                    IntelligenceBaseLabel.Content = wizard.Intelligence;
-                    VitalityBaseLabel.Content = wizard.Vitality;
-                    
-                    StrengthNowLabel.Content = wizard.Strength;
-                    DexterityNowLabel.Content = wizard.Dexterity;
-                    IntelligenceNowLabel.Content = wizard.Intelligence;
-                    VitalityNowLabel.Content = wizard.Vitality;
+                    StrengthBaseLabel.Content = wizard.strength;
+                    DexterityBaseLabel.Content = wizard.dexterity;
+                    IntelligenceBaseLabel.Content = wizard.inteligence;
+                    VitalityBaseLabel.Content = wizard.vitality;
+
+                    StrengthNowLabel.Content = wizard.strength;
+                    DexterityNowLabel.Content = wizard.dexterity;
+                    IntelligenceNowLabel.Content = wizard.inteligence;
+                    VitalityNowLabel.Content = wizard.vitality;
+
+                    Health.Content = wizard.health;
+                    Mana.Content = wizard.mana;
                     break;
                 case "Warrior":
                     Warrior warrior = new Warrior();
-                    StrengthBaseLabel.Content = warrior.Strength;
-                    DexterityBaseLabel.Content = warrior.Dexterity;
-                    IntelligenceBaseLabel.Content = warrior.Intelligence;
-                    VitalityBaseLabel.Content = warrior.Vitality;
+                    StrengthBaseLabel.Content = warrior.strength;
+                    DexterityBaseLabel.Content = warrior.dexterity;
+                    IntelligenceBaseLabel.Content = warrior.inteligence;
+                    VitalityBaseLabel.Content = warrior.vitality;
 
-                    StrengthNowLabel.Content = warrior.Strength;
-                    DexterityNowLabel.Content = warrior.Dexterity;
-                    IntelligenceNowLabel.Content = warrior.Intelligence;
-                    VitalityNowLabel.Content = warrior.Vitality;
+                    StrengthNowLabel.Content = warrior.strength;
+                    DexterityNowLabel.Content = warrior.dexterity;
+                    IntelligenceNowLabel.Content = warrior.inteligence;
+                    VitalityNowLabel.Content = warrior.vitality;
+
+                    Health.Content = warrior.health;
+                    Mana.Content = warrior.mana;
                     break;
                 case "Rogue":
                     Rogue rogue = new Rogue();
-                    StrengthBaseLabel.Content = rogue.Strength;
-                    DexterityBaseLabel.Content = rogue.Dexterity;
-                    IntelligenceBaseLabel.Content = rogue.Intelligence;
-                    VitalityBaseLabel.Content = rogue.Vitality;
+                    StrengthBaseLabel.Content = rogue.strength;
+                    DexterityBaseLabel.Content = rogue.dexterity;
+                    IntelligenceBaseLabel.Content = rogue.inteligence;
+                    VitalityBaseLabel.Content = rogue.vitality;
 
-                    StrengthNowLabel.Content = rogue.Strength;
-                    DexterityNowLabel.Content = rogue.Dexterity;
-                    IntelligenceNowLabel.Content = rogue.Intelligence;
-                    VitalityNowLabel.Content = rogue.Vitality;
+                    StrengthNowLabel.Content = rogue.strength;
+                    DexterityNowLabel.Content = rogue.dexterity;
+                    IntelligenceNowLabel.Content = rogue.inteligence;
+                    VitalityNowLabel.Content = rogue.vitality;
+
+                    Health.Content = rogue.health;
+                    Mana.Content = rogue.mana;
                     break;
             }
-
-            
         }
 
         private void StrengthBtn_Click(object sender, RoutedEventArgs e)
         {
-            ComboBoxItem selectedItem = (ComboBoxItem)UserComboBox.SelectedItem;
-            string selectedClass = selectedItem.Content.ToString();
-            if (selectedClass == "Warrior")
+            string textFromTextBox = ВalanceTextBox.Text;
+
+            if (int.TryParse(textFromTextBox, out int balance))
             {
-                MessageBox.Show("vgvuygvgy");
-                warrior.Strength += 2;
-                StrengthNowLabel.Content = warrior.Strength;
+                balance--;
+                ВalanceTextBox.Text = balance.ToString();
+                if (balance < 0)
+                {
+                    MessageBox.Show("недостаточно поинтов");
+                }
+
+                int labelValue;
+                if (int.TryParse(StrengthNowLabel.Content.ToString(), out labelValue))
+                {
+                    labelValue++;
+                    StrengthNowLabel.Content = labelValue.ToString();
+                    if(labelValue >)
+                }
+
+                if (UserComboBox.SelectedItem.ToString() == "Warrior")
+                {
+                    if (balance > 0)
+                    {
+                        warrior.health++;
+                        Health.Content = warrior.health;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Баланс пуст");
+                    }
+                }
             }
-
-            
-
-        }
-
-        private void ВalanceTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
+            else
+            {
+                MessageBox.Show("Пожалуйста, введите корректное число в поле для баланса.");
+            }
 
         }
     }
